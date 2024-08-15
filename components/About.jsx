@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
-            Hi, I'm Kumar Rahul, a passionate and dedicated Frontend Developer
+            Hi, I&#39;m Kumar Rahul, a passionate and dedicated Frontend Developer
             specializing in building modern, responsive, and user-friendly web
             applications. With expertise in React.js and Next.js, I create
             efficient and scalable solutions that provide seamless user
