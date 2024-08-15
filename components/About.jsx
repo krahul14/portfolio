@@ -22,7 +22,7 @@ const About = () => {
           <p className="py-2 text-gray-600">
             My journey into the world of web development began with a
             fascination for how websites work and a desire to bring creative
-            ideas to life on the internet. Over the years, I've honed my skills
+            ideas to life on the internet. Over the years, I&#39;ve honed my skills
             and gained extensive experience in various frontend technologies,
             enabling me to tackle complex challenges and deliver high-quality
             projects.
