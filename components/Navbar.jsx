@@ -28,10 +28,9 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed left-0 right-0 py-4 mx-auto w-max shadow-xl z-[100] ease-in-out duration-300 rounded-full'
+          ? 'fixed left-0 right-0 py-4 mx-auto w-max  z-[100] ease-in-out duration-300 rounded-full'
           : 'fixed left-0 right-0 py-4 mx-auto w-max z-[100] rounded-full'
       }
     >
