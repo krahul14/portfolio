@@ -14,35 +14,35 @@ const Contact = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
-        <h2 className="py-4">Get In Touch</h2>
+        <h2 className="py-4 text-gray-500">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-black rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
+                  className="rounded-xl shadow-black hover:scale-105 ease-in duration-300"
                   src={ContactImg}
                   alt="/"
                 />
               </div>
               <div>
-                <h2 className="py-2">Kumar Rahul</h2>
-                <p>Front-End Developer</p>
-                <p className="py-4">
+                <h2 className="py-2 text-gray-200">Kumar Rahul</h2>
+                <p className="text-gray-300">Front-End Developer</p>
+                <p className="py-4 text-gray-300">
                   I am available for freelance or full-time positions. Contact
                   me and let&apos;s talk.
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="uppercase pt-8 text-gray-300">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <a
                     href="https://www.linkedin.com/in/kumar-rahul-6a5a17197/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-lg text-white shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
                   </a>
@@ -51,19 +51,19 @@ const Contact = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-lg text-white shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
                   </a>
 
                   <a href="mailto:krahul52002@gmail.com">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <div className="rounded-full shadow-lg text-white shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
                     </div>
                   </a>
                   <Link href="/assets/Resume_KumarRahul.pdf">
                     <a>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <div className="rounded-full shadow-lg text-white shadow-black p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <BsFillPersonLinesFill />
                       </div>
                     </a>
@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
 
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-xl text-white shadow-black rounded-xl lg:p-4">
             <div className="p-4">
               <form
                 action="https://getform.io/f/bzylppga"
@@ -129,17 +129,17 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button className="w-full p-4 text-gray-100 bg-[#24153D] shadow-xl shadow-black mt-4">
                   Send Message
                 </button>
               </form>
             </div>
           </div>
         </div>
-        <div className="flex justify-center py-12">
+        <div className="flex justify-center py-12 bg-[#14131B]">
           <Link href="/">
             <a>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <div className="rounded-full shadow-lg shadow-black p-4 cursor-pointer hover:scale-110 ease-in duration-300">
                 <HiOutlineChevronDoubleUp
                   className="text-[#5651e5]"
                   size={30}

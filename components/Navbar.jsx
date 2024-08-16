@@ -4,13 +4,12 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import NavLogo from '../public/assets/navLogo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [navBg, setNavBg] = useState('#14131B');
+  const [linkColor, setLinkColor] = useState('#fff');
 
   const handleNav = () => {
     setNav(!nav);
@@ -32,25 +31,17 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-          : 'fixed w-full h-20 z-[100]'
+          ? 'fixed left-0 right-0 py-4 mx-auto w-max shadow-xl z-[100] ease-in-out duration-300 rounded-full'
+          : 'fixed left-0 right-0 py-4 mx-auto w-max z-[100] rounded-full'
       }
     >
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <Link href='/'>
-          <a>
-            <Image
-              src={NavLogo}
-              alt='/'
-              width='100'
-              height='55'
-              className='cursor-pointer'
-            />
-          </a>
-        </Link>
+      <div className='flex justify-between items-center w-full h-full rounded-full'>
         <div>
-          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
+          <ul
+            style={{ color: `${linkColor}` }}
+            className='hidden md:flex justify-center items-center shadow-2xl shadow-black  bg-[#fff]/5 backdrop-blur-lg  rounded-full  px-8 py-4'
+          >
+            <li className='text-sm uppercase hover:border-b'>
               <Link href='/'>Home</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
@@ -69,6 +60,8 @@ const Navbar = () => {
               <Link href='/#contact'>Contact</Link>
             </li>
           </ul>
+        </div>
+        <div className='flex justify-end items-end md:ml-auto ml-[300px]'>
           {/* Hamburger Icon */}
           <div
             style={{ color: `${linkColor}` }}
@@ -91,7 +84,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#14131B]/30 backdrop-blur-lg p-10 ease-in duration-500'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
@@ -99,28 +92,23 @@ const Navbar = () => {
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
                 <a>
-                  <Image
-                    src={NavLogo}
-                    width='87'
-                    height='35'
-                    alt='/'
-                  />
+                  {/* Remove Nav Logo in Mobile View */}
                 </a>
               </Link>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className='rounded-full shadow-2xl text-white shadow-black p-3 cursor-pointer'
               >
                 <AiOutlineClose />
               </div>
             </div>
             <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>
+              <p className='w-[85%] md:w-[90%] py-4 text-gray-200'>
                 Let&#39;s build something legendary together
               </p>
             </div>
           </div>
-          <div className='py-4 flex flex-col'>
+          <div className='py-4 flex flex-col text-white'>
             <ul className='uppercase'>
               <Link href='/'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
@@ -163,7 +151,7 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg text-white shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -172,14 +160,14 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                  <div className='rounded-full shadow-lg text-white shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaGithub />
                   </div>
                 </a>
                 <Link href='/#contact'>
                   <div
                     onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                    className='rounded-full shadow-lg text-white shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                   >
                     <AiOutlineMail />
                   </div>
@@ -187,7 +175,7 @@ const Navbar = () => {
                 <Link href='/assets/Resume_KumarRahul.pdf'>
                   <div
                     onClick={() => setNav(!nav)}
-                    className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
+                    className='rounded-full shadow-lg text-white shadow-black p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                   >
                     <BsFillPersonLinesFill />
                   </div>
