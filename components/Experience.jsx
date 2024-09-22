@@ -3,7 +3,7 @@ import React from "react"
 const experienceData = [
   {
     date: "May 2024-September 2024",
-    jobTitle: "Frontend Developer Intern",
+    jobTitle: "Full Stack Developer Intern",
     companyName: "HashedTokens",
     companyWebsite: "https://www.hashedtokens.com",
     description: [
