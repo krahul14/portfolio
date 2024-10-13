@@ -6,9 +6,9 @@ import Javascript from "../public/assets/skills/javascript.png"
 import ReactImg from "../public/assets/skills/react.png"
 import Tailwind from "../public/assets/skills/tailwind.png"
 import Github from "../public/assets/skills/github.png"
-import Firebase from "../public/assets/skills/firebase.png"
+import MondoDB from "../public/assets/skills/mongo.png"
 import NextJS from "../public/assets/skills/next.png"
-import Appwrite from "../public/assets/skills/appwrite.png"
+import NodeJS from "../public/assets/skills/node.png"
 import Redux from "../public/assets/skills/redux.svg"
 import Docker from "../public/assets/skills/docker.png"
 import TypeScript from "../public/assets/skills/typescript.png"
@@ -75,10 +75,10 @@ const Skills = () => {
           <div className="p-6 shadow-lg text-gray-200 shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Firebase} width="64px" height="64px" alt="/" />
+                <Image src={MondoDB} width="64px" height="64px" alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Firebase</h3>
+                <h3>Mongo DB</h3>
               </div>
             </div>
           </div>
@@ -105,10 +105,10 @@ const Skills = () => {
           <div className="p-6 shadow-lg text-gray-200 shadow-black rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={Appwrite} width="64px" height="64px" alt="/" />
+                <Image src={NodeJS} width="64px" height="64px" alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Appwrite</h3>
+                <h3>Node JS</h3>
               </div>
             </div>
           </div>
